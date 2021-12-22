@@ -1,0 +1,193 @@
+body{
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav{
+    height: 70px;
+    background: #dbdbdb;
+}
+.logo{
+    padding: 5px 0 0 80px;
+    width: 150px;
+    height: 70px;
+}
+nav ul{
+    padding: 0;
+    margin: 0;
+    float: right;
+    margin-right: 30px;
+}
+nav ul li{
+    background: #dbdbdb;
+    list-style: none;
+    display: inline-block;
+}
+nav ul li a{
+    display: block;
+    padding: 0 15px;
+    color: #313131;
+    text-decoration: none;
+    line-height: 70px;
+    font-size: 15px;
+    font-family: Helvetica;
+}
+nav ul li a:hover{
+    background: #ffcd2b;
+}
+nav ul ul{
+    position: absolute;
+    top: 70px;
+    display: none;
+}
+nav ul li:hover > ul{
+    display: block;
+}
+nav ul ul li{
+    width: 180px;
+    float: none;
+    display: list-item;
+    position: relative;
+}
+.wrapper {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.cover {
+    width: 100%;
+    height: 100vh;
+    background-image: url(banner.jpg);
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cover h2 {
+    color: #191A19;
+    font-size: 30px;
+    margin-left: 20%;
+    margin-right: 20%;
+    text-align: center;
+    z-index: 1;
+    padding: 20px 25px;
+    border: 4px solid #191A19;
+}
+div .informasi{
+    padding:20px 0;
+}
+.ajukan{
+    background-color: #ffcd2b;
+    text-align: center;
+    padding: 50px;
+}
+.ajukan h1{
+    margin:30px;
+}
+.ajukanbtn{
+    background-color: rgb(37, 37, 37);
+    text-align: center;
+    color: #ffcd2b;
+    width: 250px;
+    padding: 15px;
+    border-radius: 30px;
+}
+
+.menu1{
+    background-color: #BBBFCA;
+    height: 100vh;
+    margin:0;
+}
+.menu2{
+    background-color: #BBBFCA;
+    height: 80vh;
+    margin:0;
+}
+
+.informasi {
+    text-align: center;
+    font-size: 23px;
+}
+
+.layanan {
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+    padding:30px 0;
+}
+
+.kolom {
+    width: 40%;
+    background: #b1b7bd;
+    border-radius: 10px;
+    margin-bottom: 5px;
+    padding: 10px 12px;
+    box-sizing: border-box;
+    margin: 10px;
+    transition: 0.5s;
+}
+
+.kolom:hover {
+    box-shadow: 0 0 10px 0px rgb(0, 0, 0);
+}
+
+.kolom h3 {
+    text-align: center;
+}
+
+.kolom p {
+    color: #212121;
+    font-size: 20px;
+
+
+    padding: 10px;  
+}
+
+.kolom i{
+    font-size: 50px;
+    margin-bottom: 30px;
+}
+
+.join {
+    color: #191A19;
+    font-size: 30px;
+    margin-left: 20%;
+    margin-right: 20%;
+    text-align: center;
+}
+
+h3 {
+    font-family: 'arvo';
+    font-size: 25px;
+    margin-bottom: 30px;
+    color: #212121;
+}
+
+footer{
+    background-color: #dbdbdb;
+    display: flex;
+    padding: 20px;
+}
+.logo2{
+    padding: 5px 20px 0 50px;
+    width: 240px;
+    height: 120px;
+}
+.footer1{
+    width: 200px;
+}
+.footer1 a{
+    text-decoration:none;
+    color: rgb(0, 83, 83);
+}
+.footer2{
+    width: 300px;
+    text-align: center;
+    margin-right:50px ;
+}
+.footer2 img{
+    width: 60px;
+    height: 60px;
+}

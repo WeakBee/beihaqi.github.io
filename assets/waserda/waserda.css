@@ -1,0 +1,159 @@
+body{
+    background: #292c33;
+    margin: 0;
+    padding: 0;
+    font-family: Helvetica;
+}
+nav{
+    height: 70px;
+    background: #dbdbdb;
+    box-shadow: 0 10 px 15px rgba(0,0,0,1);
+}
+.logo{
+    padding: 5px 0 0 80px;
+    width: 150px;
+    height: 70px;
+}
+nav ul{
+    padding: 0;
+    margin: 0;
+    float: right;
+    margin-right: 30px;
+}
+nav ul li{
+    background: #dbdbdb;
+    list-style: none;
+    display: inline-block;
+}
+nav ul li a{
+    display: block;
+    padding: 0 15px;
+    color: #313131;
+    text-decoration: none;
+    line-height: 70px;
+    font-size: 15px;
+
+}
+nav ul li a:hover{
+    background: #ffcd2b;
+}
+nav ul ul{
+    position: absolute;
+    top: 70px;
+    display: none;
+}
+nav ul li:hover > ul{
+    display: block;
+}
+nav ul ul li{
+    width: 180px;
+    float: none;
+    display: list-item;
+    position: relative;
+}
+header{
+    color: rgb(248, 242, 242);
+    text-align: center;
+    margin: 50px 0;
+}
+.main{
+    display: flex;
+    justify-content: center;
+    color:#292c33 ;  
+    font-size: 18px;
+}
+.pakaian{
+    margin: 5px;
+    padding: 10px;
+    width: 400px;
+}
+.pakaian1{
+    text-align: center;
+    color:#292c33 ;
+    background-color: #ffcd2b;
+    height: 160px;
+    border-radius: 50px 50px 0 0;
+}
+.pakaian2{
+    background-color: #ffebaa;
+    border: 2px solid #ffcd2b;
+    padding: 15px;
+    border-radius: 0 0 15px 15px;
+}
+.peralatan{
+    margin: 5px;
+    padding: 10px;
+    width: 400px;
+}
+.peralatan1{
+    text-align: center;
+    color:#292c33 ;
+    background-color: #ffcd2b;
+    height: 160px;
+    border-radius: 50px 50px 0 0;
+}
+.peralatan2{
+    background-color: #ffebaa;
+    border: 2px solid #ffcd2b;
+    padding: 15px;
+    border-radius: 0 0 15px 15px;
+}
+.makanan{
+    margin: 5px;
+    padding: 10px;
+    width: 400px;
+}
+.makanan1{
+    text-align: center;
+    color:#292c33 ;
+    background-color: #ffcd2b;
+    height: 160px;
+    border-radius: 50px 50px 0 0;
+}
+.makanan2{
+    background-color: #fcc9b6;
+    border: 2px solid #ffcd2b;
+    padding: 15px;
+    border-radius: 0 0 15px 15px;
+}
+div div div ul li{
+    list-style: none;
+    display: flex;
+    margin: 20px 0;
+}
+div div div ul li p{
+    margin-left: 20px;
+}
+div div div img{
+    margin-top: 10px;
+    margin-bottom: 0;
+}
+div div div p{
+    margin-top: 5px;
+}
+footer{
+    background-color: #dbdbdb;
+    display: flex;
+    padding: 20px;
+}
+.logo2{
+    padding: 5px 20px 0 50px;
+    width: 240px;
+    height: 120px;
+}
+.footer1{
+    width: 200px;
+}
+.footer1 a{
+    text-decoration:none;
+    color: rgb(0, 83, 83);
+}
+.footer2{
+    width: 300px;
+    text-align: center;
+    margin-right:50px ;
+}
+.footer2 img{
+    width: 60px;
+    height: 60px;
+}

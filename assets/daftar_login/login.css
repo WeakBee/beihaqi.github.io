@@ -1,0 +1,102 @@
+body{
+    background-color: #3d3d3d;
+    margin: 0;
+    padding: 0;
+    font-family: Helvetica;
+}
+.dropdwn{
+    margin: 0 auto;
+}
+nav{
+    height: 70px;
+    background: #dbdbdb;
+}
+.logo{
+    padding: 5px 0 0 80px;
+    width: 150px;
+    height: 70px;
+}
+nav ul{
+    padding: 0;
+    margin: 0;
+    float: right;
+    margin-right: 30px;
+}
+nav ul li{
+    background: #dbdbdb;
+    list-style: none;
+    display: inline-block;
+}
+nav ul li a{
+    display: block;
+    padding: 0 15px;
+    color: #313131;
+    text-decoration: none;
+    line-height: 70px;
+    font-size: 15px;
+    font-family: Helvetica;
+}
+nav ul li a:hover{
+    background: #ffcd2b;
+}
+nav ul ul{
+    position: absolute;
+    top: 70px;
+    display: none;
+}
+nav ul li:hover > ul{
+    display: block;
+}
+nav ul ul li{
+    width: 180px;
+    float: none;
+    display: list-item;
+    position: relative;
+}
+.main{
+    background-color: #ffffff;
+    display: flex;
+    padding: 0;
+    margin: 80px 140px;
+    border-radius: 34px;
+}
+.main1{
+    color: #023a37;
+    text-align: center;
+    padding: 40px 180px;
+    font-size: 20px;
+}
+.main1 input{
+    width: 300px;
+    height: 30px;
+    margin: 8px;
+}
+.main2{
+    background-image: url('background3.jpeg');
+    background-size: cover;
+    color: #ffffff;
+    text-align: center;
+    border-radius: 0 30px 30px 0;
+    font-size: 20px;
+    height: 300px;
+    width: 450px;
+    margin: 0;
+    padding: 100px 30px;
+}
+.signin{
+    width: 180px;
+    height: 50px;
+    border-radius: 15px;
+    background:none;
+    border: 2px solid white;
+    color: white;
+}
+.signup{
+    width: 180px;
+    height: 50px;
+    margin-top: 20px;
+    border-radius: 15px;
+    background:#023a37;
+    border: 2px solid #119992;
+    color: #ffffff;
+}

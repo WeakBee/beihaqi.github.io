@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/simpanpinjam/simpanpinjam.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Koperasi Beihaqi</title>
+</head>
+<body>
+        <nav>
+            <img class="logo" src="assets/logo.png">
+            <ul>
+                <li><a href="home.html">BERANDA</a></li>
+                <li><a href="tentangkami.html">TENTANG KAMI</a></li>
+                <li><a href="#">LAYANAN <i class="fa fa-angle-down"></i></a>
+                    <ul>
+                        <li><a href="simpanpinjam.html">PINJAMAN</a></li>
+                        <li><a href="waserda.html">WASERDA</a></li>
+                    </ul>
+                </li>
+                <li><a href="hubungikami.html">HUBUNGI KAMI</a></li>
+                <li><a href="daftar_login.html">DAFTAR SEKARANG</a></li>
+            </ul>
+        </nav>
+
+    <header>
+        <h1>Pinjaman</h1>
+        <div class="strips"></div>
+    </header>
+    <div class="syarat">
+        <p>Layanan fasilitas pinjaman tanpa jaminan yang dapat digunakan untuk memenuhi segala kebutuhan terutama dalam mengembangkan usaha. Kami menawarkan pinjaman instan dengan suku bunga pinjaman yang kompetitif serta pilihan tenor pembayaran yang fleksibel, plafon mulai dari Rp500.000 sampai Rp5.000.000.</p>
+        <p><b>Syarat Pengajuan:</b></p>
+        <p><i class="fa fa-drivers-license"></i> KTP & Nomer HP Aktif</p>
+        <p><i class="fa fa-briefcase"></i> Calon anggota wajib memiliki usaha</p>
+    </div>
+    <div class="tatacara">
+        <h1>Tata Cara Penggunaan Pinjaman</h1>
+        <p><i class="fa fa-drivers-license"></i> Daftar dan lengkapi profil</p>
+        <p><i class="fa fa-book"></i> Ajukan Pinjaman dan pilih tenor sesuai kebutuhan</p>
+        <p><i class="fa fa-hourglass-end"></i> Tunggu hasil keputusan pinjaman</p>
+        <p><i class="fa fa-credit-card"></i> Terima dana di rekening anda</p>
+        <p><i class="fa fa-clock-o"></i> Bayar angsuran tepat waktu</p>
+    </div>
+    <div class="mainmenu">
+        <div class="headermain">
+            <h1>Simulasi Pinjaman</h1>
+        </div>
+        <div class="main">
+            <div class="main1">
+                <h3>Jumlah Pinjaman</h3>
+                <p><i>*Nominal pinjaman berlaku kelipatan Rp100.000</i></p>
+                <div class="pinjam">
+                    <div class="square">Rp</div><input type="number" id="pinjaman" name="pinjaman" >
+                </div>
+                <h3>Jangka Waktu (Tenor)</h3>
+                <div class="pinjam">
+                    <input id="bulan" class="waktu" type="number" list="waktu" placeholder="-- Pilih Jangka Waktu Pinjaman--">
+                <datalist id="waktu">
+                    <option value=3>
+                    <option value=6>
+                    <option value=12>
+                    <option value=18>
+                    <option value=24>
+                    <option value=36>        
+                    <option value=48>     
+                    <option value=60>     
+                </datalist>
+                <div class="square">Bulan</div>
+                </div>
+                <h3>Suku Bunga</h3>
+                <p><i>*Suku bunga 5%</i></p>
+            </div>
+            <div class="main2">
+                <h3>Angsuran Per Bulan</h3>
+                <p><i>*Sudah termasuk bunga dan biaya admin</i></p>
+                <div class="bayar"><p><b id="angsuran">Rp.0</b></p></div>
+                <h3>Total Pembayaran</h3>
+                <div class="bayar"><p><b id="total">Rp.0</b></p></div>
+                <input class="hitung" type="button" value="Hitung"  onclick="hitung()">
+            </div>
+        </div>
+    </div>
+    
+    <script>
+        function hitung() {
+            var pinjaman = document.getElementById("pinjaman").value;
+            var pinjaman1 = parseFloat(pinjaman);
+            var bunga = (pinjaman1 / 100) * 5;
+            var bunga1 = parseFloat(bunga);
+            var total = pinjaman1 + bunga1;
+            var total1 = parseFloat(total);
+            var waktu = document.getElementById("bulan").value;
+            var angsuran = total1 / waktu;
+
+            document.getElementById("angsuran").innerHTML = angsuran;
+            document.getElementById("total").innerHTML = total1;
+        }
+    </script>
+    <div class="ajukan">
+        <h1>Mau pinjaman dengan suku bunga rendah dan dana cepat cair?</h1>
+        <p>Daftar dan ajukan pinjaman Anda di sini!</p>
+        <button class="ajukanbtn" onclick="location.href='daftar_login.html'" type="button">Ajukan Sekarang</button>
+    </div>
+    <footer>
+        <img class="logo2" src="assets/logo.png">
+        <div class="footer1">
+            <p><b>Perusahaan</b></p>
+            <a href="tentangkami.html">Tentang Kami</a><br><br>
+            <a href="hubungikami.html">Hubungi Kami</a>
+        </div>
+        <div class="footer1">
+            <p><b>Layanan</b></p>
+            <a href="simpanpinjam.html">Pinjaman</a><br><br>
+            <a href="waserda.html">Waserda</a>
+        </div>
+        <div class="footer2">
+            <p><b>Social Media</b></p>
+            <a href="https://www.facebook.com/"><img src="assets/facebook.png"></a>
+            <a href="https://twitter.com/home"><img src="assets/twitter.png"></a>
+            <a href="https://www.instagram.com/"><img src="assets/instagram.png"></a>
+        </div>
+        <div class="footer3">
+            <p><b>KSU BEIHAQI</b></p>
+            <p>Jl. Malabar 1 No.G5, RW.16, Bojonggede, Kec. Bojong Gede, Bogor, Jawa Barat 16922</p>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,180 @@
+body{
+    background: #292c33;
+    margin: 0;
+    padding: 0;
+    font-family: Helvetica;
+}
+nav{
+    height: 70px;
+    background: #dbdbdb;
+}
+.logo{
+    padding: 5px 0 0 80px;
+    width: 150px;
+    height: 70px;
+}
+nav ul{
+    padding: 0;
+    margin: 0;
+    float: right;
+    margin-right: 30px;
+}
+nav ul li{
+    background: #dbdbdb;
+    list-style: none;
+    display: inline-block;
+}
+nav ul li a{
+    display: block;
+    padding: 0 15px;
+    color: #313131;
+    text-decoration: none;
+    line-height: 70px;
+    font-size: 15px;
+    font-family: Helvetica;
+}
+nav ul li a:hover{
+    background: #ffcd2b;
+}
+nav ul ul{
+    position: absolute;
+    top: 70px;
+    display: none;
+}
+nav ul li:hover > ul{
+    display: block;
+}
+nav ul ul li{
+    width: 180px;
+    float: none;
+    display: list-item;
+    position: relative;
+}
+header{
+    text-align: center;
+    color: #dbdbdb;
+    background-color: rgb(100, 100, 100);
+    padding: 20px;
+}
+.strips{
+    background-color: #ffcd2b;
+    height: 10px;
+    width: 100px;
+    border-radius: 10px;
+    margin:auto;
+}
+.syarat{
+    background-color: #ffcd2b;
+    margin:60px 230px 0 230px;
+    padding: 30px 80px;
+}
+.tatacara{
+    background-color: #111111;
+    text-align: center;
+    color: #ffcd2b;;
+    padding: 30px 80px;
+    margin: 0 300px;
+}
+.tatacara p{
+    color: #dbdbdb;
+    text-align: left;
+    font-size: 20px;
+}
+.mainmenu{
+    background-color: rgb(100, 100, 100);
+    color: #dbdbdb;
+    margin:0 230px 60px 230px;
+    padding: 30px 80px;
+    border-radius: 20px;
+}
+.headermain{
+    text-align: center;
+}
+.main{
+    display: flex;
+    justify-content: space-around;
+}
+.main h3{
+    color:#ffcd2b;
+    font-size: 30px;
+    margin:15px 0;
+}
+#pinjaman{
+    width: 250px;
+    padding: 15px;
+    font-size: 15px;
+    border: 2px solid rgb(37, 37, 37);
+}
+.waktu{
+    width: 230px;
+    padding: 15px;
+    font-size: 15px;
+    border: 2px solid rgb(37, 37, 37);
+}
+.pinjam{
+    display: flex;
+}
+.square{
+    padding: 15px;
+    justify-content: center;
+    background-color: rgb(37, 37, 37);
+}
+.bayar{
+    background-color: #ffcd2b;
+    text-align: center;
+    color: black;
+    padding: 3px;
+    font-size: 20px;
+    border-radius: 20px;
+}
+.hitung{
+    background-color: rgb(37, 37, 37);
+    text-align: center;
+    color: #ffcd2b;
+    margin:15px 25px;
+    width: 250px;
+    padding: 15px;
+    border-radius: 10px;
+}
+.ajukan{
+    background-color: #ffcd2b;
+    text-align: center;
+    padding: 20px;
+}
+.ajukan h1{
+    font-size: 30px;
+}
+.ajukanbtn{
+    background-color: rgb(37, 37, 37);
+    text-align: center;
+    color: #ffcd2b;
+    width: 250px;
+    padding: 15px;
+    border-radius: 30px;
+}
+footer{
+    background-color: #dbdbdb;
+    display: flex;
+    padding: 20px;
+}
+.logo2{
+    padding: 5px 20px 0 50px;
+    width: 240px;
+    height: 120px;
+}
+.footer1{
+    width: 200px;
+}
+.footer1 a{
+    text-decoration:none;
+    color: rgb(0, 83, 83);
+}
+.footer2{
+    width: 300px;
+    text-align: center;
+    margin-right:50px ;
+}
+.footer2 img{
+    width: 60px;
+    height: 60px;
+}
